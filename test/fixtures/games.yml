@@ -1,0 +1,6 @@
+no_moves:
+  board: <%= JSON.dump(Game.default_board).inspect %>
+  valid_subgames: <%= JSON.dump(Game.initial_valid_subgames).inspect %>
+  won_subgames: <%= JSON.dump(Game.default_board.first).inspect %>
+  turn: <%= Game::PLAYERS.sample.inspect %>
+  completed: false
